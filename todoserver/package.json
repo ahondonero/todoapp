@@ -1,0 +1,27 @@
+{
+  "name": "todoserver",
+  "version": "1.0.0",
+  "description": "this is my first demo server script (db interface script)",
+  "main": "index.js",
+  "scripts": {
+    "delete_todo": "node customer/dbdelete_customer.js",
+    "update_todo": "node customer/dbupdate_customer.js",
+    "insert_todo": "node customer/dbinsert_customer.js",
+    "select_todo": "node customer/dbselect_customer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "interface",
+    "database",
+    "postgres",
+    "insert",
+    "update",
+    "delete"
+  ],
+  "author": "Arnel Hondonero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  }
+}
