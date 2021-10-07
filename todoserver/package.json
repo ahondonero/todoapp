@@ -10,6 +10,10 @@
     "select_todo": "node customer/dbselect_customer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type":"git",
+    "url": "git+https://ahondonero.github.io/todoapp/.git"
+  },
   "keywords": [
     "interface",
     "database",
