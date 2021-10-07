@@ -1,7 +1,8 @@
 const pool = require("./db");
 
-pool.query("INSERT INTO public.customer(first_name) VALUES ($1) RETURNING *",['walking'],(err,res)=>{
-    if(err){
+pool.query("UPDATE public.customer SET first_name = $1 WHERE customer_id = 600 RETURNING*",
+['Lara'], (err,res) => {
+    if(err) {
         console.log(err.stack);
     }
     else{

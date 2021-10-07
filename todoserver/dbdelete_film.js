@@ -1,10 +1,10 @@
 const pool = require("./db");
 
-pool.query("DELETE FROM public.customer WHERE first_name = $1 RETURNING *",[3],(err,res)=>{
-    if(err){
+pool.query("DELETE FROM public.film WHERE film_id =$1 RETURNING *", ["50"], (err, res) => {
+    if (err) {
         console.log(err.stack);
     }
-    else{
+    else {
         console.log(res.rows);
     }
 });
